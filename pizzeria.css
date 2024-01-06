@@ -1,0 +1,242 @@
+:root {
+    box-sizing: border-box;
+    color: white;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_640.jpg);
+}
+
+#header {
+    padding: 5px;
+    font-family: "Cookie", cursive;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo img {
+   margin: auto;
+    width: 60px;
+}
+
+#logo {
+    font-size: 3.75rem;
+    font-family: "Cookie";
+    color: white;
+}
+
+.menu {
+    flex: 0 0 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.menu ul li a {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.menu ul li a:hover {
+    color: #ffd77f;
+}
+
+.contact-info {
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.slider-box {
+    height: 200px;
+    
+    display: flex;
+}
+
+.slider-half-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    font-family: cursive, Geneva;
+    padding: 20px;
+}
+
+.slider-half-item .button {
+    text-transform: uppercase;
+    padding: 8px;
+    text-decoration: none;
+    margin: 2px;
+    font-size: 0.7rem;
+    
+}
+
+.button-section {
+    margin-top: 20px;
+}
+
+.order-button {
+    color: white;
+    border: 2px solid white;
+}
+
+.order-button:hover {
+    background-color: #c79a9a;
+}
+
+.book-button {
+    color: white;
+    border: 2px solid white;
+}
+
+.book-button:hover{
+    background-color: #c79a9a;
+}
+
+.pizza-img{
+    background-image: url(https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-6/386590360_814714473991275_7519115854163336776_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=7n_jHpdHtbwAX8M4p9a&_nc_ht=scontent-waw1-1.xx&oh=00_AfBLnjQOM1w104rvQrULynux9AORd1UmARM6gOS3KRlx6A&oe=659DF2C3);
+    background-size: cover;
+    
+    background-position: center center;
+    
+    
+}
+
+.advantages-box {
+    margin-top: 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.advantages-box div{
+    flex: 1 0 30%;
+}
+
+.column-advantage {
+    position: relative;
+    height: 160px;
+    border: 5px solid black;
+    background-size: cover;
+    background-position: center center;
+}
+
+.best-ingridients {
+    background-image: url("https://cdn.pixabay.com/photo/2016/04/25/10/22/mushrooms-1351563_640.jpg");
+}
+
+.original-recipe {
+    background-image: url("https://cdn.pixabay.com/photo/2020/11/18/21/10/recipe-5756757_640.jpg");
+}
+
+.fast-delivery{
+    background-image: url("https://cdn.pixabay.com/photo/2016/05/30/14/10/delivery-guy-1424808_1280.png");
+    
+}
+
+.bottom-right {
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+}
+
+
+.menu-title {
+    font-weight: 10rem;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 1.4rem;
+}
+
+.column{
+    min-width: 120px;
+    margin-top: 60px ;
+    
+}
+
+.right-column{
+    flex-grow: 1;
+    text-align: left ;
+    padding: 0 20px;
+    
+}
+
+article{
+    margin-top: 60px;
+}
+.middle-column{
+    display: none;
+    margin-inline: 20px;
+}
+
+
+
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+    }
+    .navbar div{
+        margin-top: 0;
+    }
+    .navbar-links {
+        flex-direction: row;
+    }
+
+    .container{
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 992px) {
+    .right-column {
+        display: block;
+    }
+}
+@media (min-width: 1200px) {
+    .column {
+        min-width: 200px;
+    }
+}
+
+footer{
+    font-size: smaller;
+    font-size: 10px;
+    text-decoration-line: overline;
+        
+    
+}
+ 
+
+.not-all-time-avileable{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 1.4rem;
+}
+
+
+
+
+
+
+
